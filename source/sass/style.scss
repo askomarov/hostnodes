@@ -1,0 +1,32 @@
+@import "vendor/normalize.scss";
+// @import "fonts.scss";
+@import "vendor/normalize.scss";
+@import "variables.scss";
+@import "global.scss";
+@import "body.scss";
+@import "container.scss";
+@import "blocks/btn.scss";
+@import "blocks/header-actions.scss";
+@import "blocks/header-bottom.scss";
+@import "blocks/learn.scss";
+@import "blocks/nav.scss";
+@import "blocks/promo.scss";
+@import "blocks/search.scss";
+@import "blocks/site-header.scss";
+@import "blocks/top.scss";
+@import "blocks/user-menu.scss";
+@import "blocks/footer.scss";
+
+// @import "blocks/"
+// @import "blocks/"
+// @import "blocks/"
+// @import "blocks/"
+
+.main {
+  min-height: 50vh;
+}
+.site-title {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}

@@ -1,0 +1,26 @@
+.btn {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 3px;
+}
+.btn--outline {
+  border-color: #dcdee2;
+  color: #0c0d0f;
+}
+
+.btn--primary {
+  color: #fff;
+  background-color: #1062fe;
+  border-color: #1062fe;
+}
+.btn--primary:hover {
+  background-color: #015abe;
+  border-color: #015abe;
+}
