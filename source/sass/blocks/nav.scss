@@ -19,6 +19,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     margin: 0;
+    color: #ffffff94;
 
     .nav__item {
       visibility: hidden;
@@ -27,7 +28,6 @@
 
   .nav__wrapper.active {
     z-index: 100;
-    color: #ffffff94;
     transition: all 0.3s ease-out;
 
     .nav__item {

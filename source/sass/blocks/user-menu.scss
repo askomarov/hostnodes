@@ -1,6 +1,7 @@
 .user-menu {
   position: relative;
 }
+
 .user-menu__dropdown-toggle {
   width: 36px;
   height: 36px;
@@ -9,6 +10,7 @@
   justify-content: center;
   fill: #b9bdc5;
 }
+
 .user-menu__dropdown-toggle:hover {
   fill: #1062fe;
 }
@@ -29,14 +31,17 @@
   transition: transform 0.3s ease 0s;
   transform-origin: right top;
 }
+
 .user-menu__list.active {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   transform: scale(1);
 }
+
 .user-menu__item {
 }
+
 .user-menu__item:last-child {
   margin-top: 16px;
   position: relative;
@@ -73,7 +78,7 @@
   .user-menu__item a {
     visibility: hidden;
   }
-  
+
   .user-menu__list.active {
     .user-menu__item a {
       visibility: visible;
