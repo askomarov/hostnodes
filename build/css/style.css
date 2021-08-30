@@ -880,10 +880,16 @@ body.active {
   transition: all 0.3s ease;
   pointer-events: none;
   color: #b9bdc5; }
+  .search__btn-submit svg {
+    color: #b9bdc5; }
   @media (hover) {
     .search__btn-submit:hover {
       background: #e4e4e4;
-      color: #1062fe; } }
+      color: #1062fe;
+      stroke: #1062fe; }
+      .search__btn-submit:hover svg {
+        color: #1062fe;
+        stroke: #1062fe; } }
 
 .site-header {
   position: relative;
