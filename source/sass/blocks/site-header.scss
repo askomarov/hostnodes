@@ -19,6 +19,13 @@
   }
 }
 
+@media (max-width: 991px) {
+  .site-header--hide {
+    transform: translateY(-100%);
+    box-shadow: none;
+  }
+}
+
 .site-header__logo {
   font-weight: bold;
   font-size: 20px;
@@ -40,12 +47,4 @@
   .site-header__wrapper {
     padding-left: 54px;
   }
-}
-
-@media (max-width: 991px) {
-  .site-header__end {
-  }
-}
-
-.site-header__bottom {
 }
