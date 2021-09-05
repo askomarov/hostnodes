@@ -192,6 +192,7 @@ const initAccordion = () => {
 // });
 
 const onScrollHideHeader = () => {
+
   let scrollPrev = 0;
   // let page = document.querySelector(".page");
   let siteHeader = document.querySelector('.site-header');
@@ -200,10 +201,10 @@ const onScrollHideHeader = () => {
     var scrolled = window.pageYOffset;
     if (scrolled > 100 && scrolled > scrollPrev) {				/* если прокрутил больше чем на 100px*/
       siteHeader.classList.add("site-header--hide");		/*добавялется класс нашему меню и оно фиксируется*/
-      // page.classList.add("page--padtop");
+      body.style.paddingTop = "74px";
     } else {
       siteHeader.classList.remove("site-header--hide"); /* если меньше то класс удаляется*/
-      // page.classList.remove("page--padtop");
+      body.style.paddingTop = "0";
     }
     scrollPrev = scrolled;
   };
