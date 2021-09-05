@@ -766,6 +766,13 @@ body.active {
         -webkit-transform: translateX(var(--mobile-menu-width));
                 transform: translateX(var(--mobile-menu-width)); } }
 
+@media (max-width: 991px) {
+  .site-header--hide {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-box-shadow: none;
+            box-shadow: none; } }
+
 .site-header__logo {
   font-weight: bold;
   font-size: 20px;

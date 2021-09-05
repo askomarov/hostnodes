@@ -178,8 +178,40 @@ const initAccordion = () => {
   };
 };
 
-document.addEventListener('DOMContentLoaded', () => {
+// let header = document.querySelector('.header');  /*нашли хедер*/
+// let scrollPrev = 0;
+// $(window).scroll(function () {
+//   var scrolled = $(window).scrollTop();
 
+//   if (scrolled > 100 && scrolled > scrollPrev) {
+//     header.classList.add('out');
+//   } else {
+//     header.classList.remove('out');
+//   }
+//   scrollPrev = scrolled;
+// });
+
+const onScrollHideHeader = () => {
+
+  let scrollPrev = 0;
+  // let page = document.querySelector(".page");
+  let siteHeader = document.querySelector('.site-header');
+  // фиксируем главное меню при скролле
+  window.onscroll = function () {            /*функция при прокручивании*/
+    var scrolled = window.pageYOffset;
+    if (scrolled > 100 && scrolled > scrollPrev) {				/* если прокрутил больше чем на 100px*/
+      siteHeader.classList.add("site-header--hide");		/*добавялется класс нашему меню и оно фиксируется*/
+      body.style.paddingTop = "74px";
+    } else {
+      siteHeader.classList.remove("site-header--hide"); /* если меньше то класс удаляется*/
+      body.style.paddingTop = "0";
+    }
+    scrollPrev = scrolled;
+  };
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  onScrollHideHeader();
   initSiteHeader();
   initLearnModal();
   initAccordion();
